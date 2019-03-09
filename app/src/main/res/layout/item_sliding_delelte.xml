@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mydemoapp.sliding.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="3dp">
+
+    <!--删除、免打扰 按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/item_slide"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@+id/item_sliding_lay"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_sliding_no_disturb"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#D4D9DD"
+                android:gravity="center"
+                android:text="免打扰"
+                android:textColor="#DDFFFFFF" />
+
+            <TextView
+                android:id="@+id/item_sliding_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="删 除"
+                android:textColor="#DDFFFFFF" />
+        </LinearLayout>
+
+        <!--放置的内容部分-->
+        <RelativeLayout
+            android:id="@+id/item_sliding_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_sliding_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ac_bg"
+                android:gravity="center"
+                android:text="content"
+                android:textColor="#DD000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.android.mydemoapp.sliding.SlidingButtonView>
