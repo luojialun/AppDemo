@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".network.NetworkActivity">
+
+        <activity android:name=".defineviewpage.MyViewPagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
