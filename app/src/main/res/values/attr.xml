@@ -2,7 +2,12 @@
 <resources>
 
     <declare-styleable name="NoPaddingTextView">
-        <attr name="removeDefaultPadding" format="boolean"/>
+        <attr name="removeDefaultPadding" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DanmuGroup">
+
+        <attr name="danmuRaw" format="integer" />
     </declare-styleable>
 
 </resources>
