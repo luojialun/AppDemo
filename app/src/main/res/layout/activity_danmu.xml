@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,28 +7,58 @@
     android:orientation="vertical"
     tools:context=".danmu.DanmuActivity">
 
-    <com.android.mydemoapp.danmu.DanmuView
-        android:id="@+id/danmuview"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
-
     <com.android.mydemoapp.danmu.DanmuGroup
         android:id="@+id/danmugroup"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        app:danmuRaw="3" />
+        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/click_tv"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorAccent"
-        android:gravity="center"
-        android:text="click"
-        android:textColor="@color/ac_bg"
-        android:textSize="18sp" />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/start_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="start" />
+
+        <TextView
+            android:id="@+id/pause_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="pause" />
+
+        <TextView
+            android:id="@+id/resume_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="resume" />
+
+        <TextView
+            android:id="@+id/insert_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="insert" />
+
+        <TextView
+            android:id="@+id/remove_all_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="removeAllDanmu" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

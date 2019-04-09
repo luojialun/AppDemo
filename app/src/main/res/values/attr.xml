@@ -6,8 +6,7 @@
     </declare-styleable>
 
     <declare-styleable name="DanmuGroup">
-
-        <attr name="danmuRaw" format="integer" />
+        <attr name="raw" format="integer"/>
     </declare-styleable>
 
 </resources>
