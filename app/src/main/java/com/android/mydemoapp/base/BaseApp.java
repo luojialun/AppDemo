@@ -3,6 +3,7 @@ package com.android.mydemoapp.base;
 import android.app.Application;
 import android.content.Context;
 
+import com.android.mydemoapp.swipeback.xbeats.ActivityLifecycleHelper;
 import com.android.mydemoapp.util.NotchScreenUtils;
 
 /**
@@ -18,6 +19,7 @@ public class BaseApp extends Application {
     public void onCreate() {
         super.onCreate();
         context = this;
+        registerActivityLifecycleCallbacks(ActivityLifecycleHelper.build());
     }
 
     public static Context getContext() {
