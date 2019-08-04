@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:name=".base.BaseApp"
@@ -17,7 +18,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".splash.SplashActivity"
+        <activity
+            android:name=".topview.TopView1Activity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +38,8 @@
 
         <activity android:name=".swipeback.SwipeBack2Activity" />
         <activity android:name=".swipeback.SwipeBack3Activity" />
-        <activity android:name=".recyclerview.RecyclerviewActivity"/>
+        <activity android:name=".recyclerview.RecyclerviewActivity" />
+        <activity android:name=".topview.TopView2Activity"/>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.android.mydemoapp.swipeback.xbeats.ActivityLifecycleHelper;
 import com.android.mydemoapp.util.NotchScreenUtils;
+import com.squareup.leakcanary.LeakCanary;
 
 /**
  * Created by luojialun on 2017/8/27.
@@ -20,6 +21,7 @@ public class BaseApp extends Application {
         super.onCreate();
         context = this;
         registerActivityLifecycleCallbacks(ActivityLifecycleHelper.build());
+        setupLeakCanary();
     }
 
     public static Context getContext() {
@@ -31,5 +33,12 @@ public class BaseApp extends Application {
             mStatusBarHeight = NotchScreenUtils.getStatusBarHeight();
         }
         return mStatusBarHeight;
+    }
+
+    protected void setupLeakCanary() {
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+        }
+        LeakCanary.install(this);
     }
 }
