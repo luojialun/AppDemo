@@ -20,6 +20,11 @@ import com.android.mydemoapp.util.ToastUtils;
 
 import butterknife.OnClick;
 
+/**
+ * https://www.jianshu.com/p/99f735c9833a
+ * 顶级视图弹窗
+ * created by luojialun on 2019/8/4
+ */
 public class TopView1Activity extends BaseActivity {
 
     WindowManager wm;
@@ -99,7 +104,7 @@ public class TopView1Activity extends BaseActivity {
         params.width = SizeUtils.dp2px(126);
         params.height = SizeUtils.dp2px(68);
         params.x = ScreenUtils.getScreenWidth() / 2;
-        params.y = (ScreenUtils.getScreenHeight() ) / 2- SizeUtils.dp2px(100);
+        params.y = (ScreenUtils.getScreenHeight()) / 2 - SizeUtils.dp2px(100);
         wm.addView(floatView, params);
 
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(iv, "translationX", -SizeUtils.dp2px(126));
