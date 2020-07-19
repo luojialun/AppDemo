@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -31,25 +32,37 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
     //butternife
     implementation 'com.jakewharton:butterknife:9.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
     //okhttp
     implementation 'com.squareup.okhttp3:okhttp:3.13.1'
+
     //glide
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
     //recyclerview
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+
     //eventbus
     implementation 'org.greenrobot:eventbus:3.1.1'
+
     //滑动退出
     implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+
     //LeakCanary
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
     //permission
     implementation 'com.yanzhenjie:permission:2.0.0-rc1'
+
     //blankj
     implementation 'com.blankj:utilcode:1.25.8'
+
+    //adapter
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 }

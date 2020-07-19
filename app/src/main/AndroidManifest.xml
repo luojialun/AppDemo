@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".graytheme.GrayThemeActivity"
+            android:name=".recyclerview.RecyclerviewActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,6 @@
 
         <activity android:name=".swipeback.SwipeBack2Activity" />
         <activity android:name=".swipeback.SwipeBack3Activity" />
-        <activity android:name=".recyclerview.RecyclerviewActivity" />
         <activity android:name=".topview.TopView2Activity" />
     </application>
 
